@@ -4,7 +4,7 @@
 2. define folder where new instance of NopCommerce is available (2nd line in script)
 3. define some custom items (files or folders) to backup in list variable **$itemsToBackupCopy**
 4. define some large folders to backup by moving folder in list variable **$itemsToBackupMove**
-**5. run deploy script as administrator, following tasks will be executed:**
+**5. run deploy script as administrator, following tasks will be executed:**  
    1. web site and application pool will be stopped
    2. backup folder will be created and defined items will be copied/moved to this folder
    3. old web site files will be removed
