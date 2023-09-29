@@ -1,1 +1,1 @@
-# nop-oneclick-deploy
+# NopCommerce - powershell script for one click deploy
