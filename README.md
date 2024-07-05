@@ -1,4 +1,5 @@
-# NopCommerce - powershell script for one click deploy  
+# NopCommerce - powershell script for one click deploy
+## [NOT MAINTAINED CODE (ONLY FOR DEMONSTRATION)]
 
 1. copy this deploy script to root folder where NopCommerce instance is hosted
 2. define folder where new instance of NopCommerce is available (3nd line in script)
