@@ -2,7 +2,7 @@
 ## [NOT MAINTAINED CODE (ONLY FOR DEMONSTRATION)]
 
 1. copy this deploy script to root folder where NopCommerce instance is hosted
-2. define folder where new instance of NopCommerce is available (3nd line in script)
+2. define folder where new instance of NopCommerce is available (3rd line in script)
 3. define some custom items (files or folders) to backup in list variable **$itemsToBackupCopy**
 4. define some large folders to backup by moving folder in list variable **$itemsToBackupMove**  
 5. **run deploy script as administrator, following tasks will be executed:**  
