@@ -21,7 +21,7 @@ if ($poolStatus.Value -ne "Stopped") {
     Start-Sleep -s 5;
 }
 
-# if web site process is still running, try to kill them and wait for 20 seconds
+# if web site processes are still running, try to kill them and wait for 20 seconds
 $WPlist = Get-WmiObject -NameSpace 'root\WebAdministration' -class 'WorkerProcess' -ComputerName 'LocalHost';
 
 foreach ($WP in $WPlist)
@@ -112,7 +112,7 @@ Remove-Item -Recurse -Force | Out-Null;
 
 Write-Host "Copying new web site files ...";
 
-# copying new instance of NopCommerce defined at the begging of the script
+# copying new instance of NopCommerce defined at the beginning of the script
 if (Test-Path -Path $nopDir -PathType Any) {
     Copy-Item -Path (Get-Item -Path "$nopDir\*" -Exclude ('Themes')).FullName -Destination $siteDir -Recurse -Force | Out-Null;
 
@@ -125,7 +125,7 @@ if (Test-Path -Path $nopDir -PathType Any) {
 
 Write-Host "Restoring web site backup ...";
 
-# restoring backuped files/folders (existing files will be replaced by backuped)
+# restoring backed up files/folders (existing files will be replaced by the backed up ones)
 foreach ($item in $itemsToBackupMove) {
     $sourceDir = $backupDir + $item;
     $destinDir = $siteDir + $item;
